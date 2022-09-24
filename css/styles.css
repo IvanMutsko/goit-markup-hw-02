@@ -1,0 +1,67 @@
+/* Палітра сайту */
+:root {
+  --accent-color: #2196f3;
+  --black-logo: #000000;
+  --main-text: #212121;
+  --secondary-text: #757575;
+  --white-text: #ffffff;
+  --white-background: #ffffff;
+  --grey-background: #f5f4fa;
+  --dark-background: #2f303a;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-style: normal;
+}
+
+/* header */
+.header {
+  background-color: var(--white-background);
+}
+.logo-header {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+  color: var(--black-logo);
+}
+.logo-web {
+  color: var(--accent-color);
+}
+.nav-list {
+  list-style-type: none;
+}
+.nav-list .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+  color: var(--main-text);
+}
+.contacts {
+  list-style-type: none;
+}
+.contacts .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+  color: var(--secondary-text);
+}
+
+.header .link:hover,
+.header .link:focus {
+  color: var(--accent-color);
+}
+.header .active-link {
+  color: var(--accent-color)
+}
