@@ -1,10 +1,11 @@
-/* Палітра сайту */
+/* Палітра і основні стилі сайту */
 :root {
   --accent-color: #2196f3;
   --black-logo: #000000;
   --main-text: #212121;
   --secondary-text: #757575;
   --white-text: #ffffff;
+  --footer-text: rgba(255, 255, 255, 0.6);
   --white-background: #ffffff;
   --grey-background: #f5f4fa;
   --dark-background: #2f303a;
@@ -13,7 +14,15 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-style: normal;
+  color: var(--secondary-text);
+  background-color: var(--white-background);
+}
+
+button {
+  cursor: pointer;
+}
+.hiden {
+  display: none;
 }
 
 /* header */
@@ -63,5 +72,173 @@ body {
   color: var(--accent-color);
 }
 .header .active-link {
-  color: var(--accent-color)
+  color: var(--accent-color);
+}
+
+/* footer */
+.footer {
+  background-color: var(--dark-background);
+}
+.logo-footer {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+  color: var(--white-text);
+}
+.address-list {
+  list-style-type: none;
+}
+.address-list .link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+  color: var(--footer-text);
+}
+.address-list [rel] {
+  color: var(--white-text);
+}
+
+/* studio (main page) */
+/* hero */
+.hero {
+  background-color: var(--dark-background);
+}
+.hero h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--white-text);
+}
+.hero button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--white-text);
+  background-color: var(--accent-color);
+}
+
+/* benefits */
+.benefits {
+}
+.benefits h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--main-text);
+}
+.benefits-list {
+  list-style-type: none;
+}
+.benefits p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* work */
+.work {
+}
+.work h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text);
+}
+.work-list {
+  list-style-type: none;
+}
+.work img {
+  /* чи треба тут прописувати max-width або ще щось якщо в html вже є ширина?  */
+}
+
+/* command */
+.command {
+  background-color: var(--grey-background);
+}
+.command h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text);
+}
+.command-list {
+  list-style-type: none;
+}
+.command h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text);
+}
+.command p {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* portfolio page */
+.filter-list {
+  list-style-type: none;
+}
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text);
+  background-color: var(--grey-background);
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--white-text);
+  background-color: var(--accent-color);
+}
+.project-list {
+  list-style-type: none;
+}
+.project-list h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--main-text);
+}
+.project-list p {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
