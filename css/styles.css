@@ -1,6 +1,7 @@
 /* Палітра і основні стилі сайту */
 :root {
   --accent-color: #2196f3;
+  --accent-active: #188ce8;
   --black-logo: #000000;
   --main-text: #212121;
   --secondary-text: #757575;
@@ -13,13 +14,13 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
   color: var(--secondary-text);
   background-color: var(--white-background);
 }
 
 button {
   cursor: pointer;
+  font-family: inherit;
 }
 .hiden {
   display: none;
@@ -95,7 +96,6 @@ button {
 .address-list .link {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -106,13 +106,17 @@ button {
 .address-list [rel] {
   color: var(--white-text);
 }
+.address-list .link:hover,
+.adress-list .link:focus {
+  color: var(--accent-color);
+}
 
-/* studio (main page) */
+/* ---------------studio (main page)--------------- */
 /* hero */
 .hero {
   background-color: var(--dark-background);
 }
-.hero h1 {
+.hero .title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -122,7 +126,7 @@ button {
 
   color: var(--white-text);
 }
-.hero button {
+.hero-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -135,10 +139,15 @@ button {
   background-color: var(--accent-color);
 }
 
+.hero button:hover,
+.hero button:focus {
+  background-color: var(--accent-active);
+}
+
 /* benefits */
 .benefits {
 }
-.benefits h3 {
+.benefits .title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -150,7 +159,7 @@ button {
 .benefits-list {
   list-style-type: none;
 }
-.benefits p {
+.benefits-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -159,7 +168,7 @@ button {
 /* work */
 .work {
 }
-.work h2 {
+.work .title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -179,7 +188,7 @@ button {
 .command {
   background-color: var(--grey-background);
 }
-.command h2 {
+.command .title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -191,7 +200,10 @@ button {
 .command-list {
   list-style-type: none;
 }
-.command h3 {
+.comand-list .item {
+  background-color: var(--white-background);
+}
+.command-list .title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -200,18 +212,18 @@ button {
 
   color: var(--main-text);
 }
-.command p {
+.command-list .text {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-/* portfolio page */
+/* ---------------portfolio page--------------- */
 .filter-list {
   list-style-type: none;
 }
-.filter-button {
+.filter-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -221,15 +233,19 @@ button {
   color: var(--main-text);
   background-color: var(--grey-background);
 }
-.filter-button:hover,
-.filter-button:focus {
+.filter-btn:hover,
+.filter-btn:focus {
   color: var(--white-text);
   background-color: var(--accent-color);
 }
 .project-list {
   list-style-type: none;
 }
-.project-list h2 {
+.project-list .link {
+  text-decoration: none;
+  color: inherit;
+}
+.project-list .title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -237,7 +253,7 @@ button {
 
   color: var(--main-text);
 }
-.project-list p {
+.project-list .text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
