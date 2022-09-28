@@ -22,8 +22,17 @@ button {
   cursor: pointer;
   font-family: inherit;
 }
-.hiden {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /* header */
@@ -94,7 +103,6 @@ button {
   list-style-type: none;
 }
 .address-list .link {
-  font-family: 'Roboto';
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -130,9 +138,6 @@ button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 
   color: var(--white-text);
@@ -166,8 +171,7 @@ button {
 }
 
 /* work */
-.work {
-}
+
 .work .title {
   font-weight: 700;
   font-size: 36px;
@@ -179,9 +183,6 @@ button {
 }
 .work-list {
   list-style-type: none;
-}
-.work img {
-  /* чи треба тут прописувати max-width або ще щось якщо в html вже є ширина?  */
 }
 
 /* command */
@@ -200,7 +201,7 @@ button {
 .command-list {
   list-style-type: none;
 }
-.comand-list .item {
+.command-list .item {
   background-color: var(--white-background);
 }
 .command-list .title {
@@ -227,7 +228,6 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--main-text);
